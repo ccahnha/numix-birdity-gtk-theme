@@ -3,22 +3,31 @@
 @import "functions";
 
 // default color scheme
-$bg_color: if($variant == "dark", #444, #eee);
-$fg_color: if($variant == "dark", #ddd, #555);
-$base_color: if($variant == "dark", #333, #fff);
-$text_color: if($variant == "dark", #eee, #333);
-$selected_bg_color: #f0544c;
-$selected_fg_color: #fff;
-$tooltip_bg_color: #444;
-$tooltip_fg_color: #eee;
+$bg_color: if($variant == "dark", #e6e6fa, #261d33);
+$fg_color: if($variant == "dark", #261d33, #e6e6fa);
+$base_color: if($variant == "dark", #dedede, #322644);
+$text_color: if($variant == "dark", #322644, #dedede);
+$button_bg_color: if($variant == "dark", #dedede, #372a4c);
+$button_fg_color: if($variant == "dark", #372a4c, #dedede);
+$header_button_bg_color: #3b2a4c;
+$header_button_fg_color: #eeeeee;
+$selected_bg_color: #007700;
+$selected_fg_color: #ffffff;
+$tooltip_bg_color: #261d33;
+$tooltip_fg_color: #e6e6fa;
 
 // dark colors
-$dark_bg_color: #444;
-$dark_fg_color: #eee;
+$dark_bg_color: #201729;
+$dark_fg_color: #eeeeee;
 
 // shadows
 $dark_shadow: #000;
 $light_shadow: #fff;
+
+// caret
+$primary_caret_color: #666666;
+$secondary_caret_color: #666666;
+$caret_aspect_ratio: 0.04;
 
 // white and black
 $black: #000;
@@ -33,7 +42,7 @@ $question_fg_color: #fff;
 $question_bg_color: #673ab7;
 $error_fg_color: #fff;
 $error_bg_color: #f44336;
-$link_color: #fc6f5d;
+$link_color: #007700;
 $success_color: #4caf50;
 $warning_color: #ef6c00;
 $error_color: #f44336;
@@ -61,8 +70,8 @@ $lightdm_bg_color: $dark_bg_color;
 $lightdm_fg_color: $dark_fg_color;
 
 $wm_bg: $titlebar_bg_color;
-$wm_border_focused: transparent;
-$wm_border_unfocused: transparent;
+$wm_border_focused: #5d5270;
+$wm_border_unfocused: #3f384c;
 $wm_title_focused: mix($titlebar_fg_color, $titlebar_bg_color, .1);
 $wm_title_unfocused: mix($titlebar_fg_color, $titlebar_bg_color, .4);
 $wm_icons_focused: mix($titlebar_fg_color, $titlebar_bg_color, .1);
@@ -73,7 +82,8 @@ $wm_icons_unfocused_prelight: $selected_bg_color;
 $wm_icons_unfocused_pressed: shade($selected_bg_color, .8);
 
 // widget styles
-$roundness: 2px;
+$roundness: 3px;
 $spacing: 5px;
-$gradient: 0;
+$gradient: 0.0;
+
 $contrast: .8;
