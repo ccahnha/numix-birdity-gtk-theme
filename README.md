@@ -32,7 +32,7 @@ You'll also need the ```glib-compile-schemas``` and  ```gdk-pixbuf-pixdata``` co
 After installing all the dependencies, change to the cloned directory and, run the following in Terminal,
 
 ```sh
-sudo make install
+make install
 ```
 
 To set the theme in GNOME, run the following commands in Terminal,
